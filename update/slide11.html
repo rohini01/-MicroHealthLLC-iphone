@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/loginreport.js"></script>
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script language="javascript">
+
+function moveback() {
+ window.location="slide12.html";
+}
+
+function start(){
+do_tts();
+setTimeout(moveback, 9000); 
+}
+</script>
+</head>
+<body onLoad="start()">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+<!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            <h1><img src="images/logo.png" width="100%" height="180" /></h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                       <div class="col-md-4 sign_screen_divleft">
+                                       
+                                                            <img src="images/lady_img.png" class="lady_img"/>
+                                                            </div>
+                                                            
+                       
+<div class="col-md-4 sign_screen_divright_enc">
+<!-- comment image-->
+                           <div class="text_bg_signin4">
+                          
+                                   <div id="speech_en">
+                                      Please login to view reports and set me up
+                                        </div>
+
+</div>
+
+<div class="report_logform">
+                          
+                                       
+                                     <form>
+		<input type="text" class="user active" id="email" value="Your name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your name';}"/>
+         <hr class="rep_logline" noshade>
+		<input type="password" class="lock active" id="password" value="Your Password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Password';}"/>
+         <hr class="rep_logline" noshade>
+         </form>
+         
+         <div class="btn_signinwelcum1">
+                                 <form>
+                
+                <center><input type="button" value="Log In" class="submitt" id="login"  onClick="moveback();"/></center>
+       <p class="dont_account">Don't have an account ?
+                           <span class="reg_tagline_font_reg"><a href="create_account.html">Register here</a></span></p>
+
+       </form>
+       
+                                 </div>
+
+</div>
+
+                                        
+                                       
+<!-- comments data end -->
+<!--submit buttons-->
+
+
+</div>
+
+
+
+  <!-- submit btn end-->                                                   
+                                                            
+                                                            
+ </div>
+                                                            
+                                                            
+                               <div class="col-md-4">
+                               
+                               </div>                             
+                        
+                        
+                        
+                        
+                        
+                        
+                                                            
+                    </div>
+                    </div>
+                    
+                    
+                    
+
+	
+
+
+
+<!--login end here-->
+</body>
+</html>

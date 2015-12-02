@@ -1,0 +1,149 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script type="text/javascript" src="jquery-1.3.2.js"> </script>
+ <script type="text/javascript">
+
+ $(document).ready(function() {
+
+    $("#display").click(function() {                
+
+      $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: "http://siliconwebsolution.com/microhealth/rahul/display.php",             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){                    
+            $("#responsecontainer").html(response); 
+           //alert(response);
+        }
+
+    });
+});
+});
+
+
+$(document).ready(function() {
+
+    $("#company").click(function() {                
+
+      $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: "http://siliconwebsolution.com/microhealth/rahul/company.php",             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){                    
+            $("#responsecompany").html(response); 
+           //alert(response);
+        }
+
+    });
+});
+});
+</script>
+<script language="javascript">
+
+function moveback() {
+ window.location="slide13.html";
+}
+
+function start(){
+do_tts();
+setTimeout(moveback, 20000); 
+}
+</script>
+</head>
+<body onLoad="start()">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+<!--login start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            <h1><img src="images/logo.png" width="100%" height="170" /></h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                    </div>
+  </div>
+
+<!--- Buttons   -->
+
+<div class="container-fluid">
+<!------ Buttons --->
+                    <div class="row">
+                                                            <div class="col-md-2">
+                                                           
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                            
+                                                                            <div class="row divs_btns">
+                                                                                <div class="col-md-4">
+                                                                               <input type="submit" value="Users" class="submitt"  id="display"/>
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                          
+                                                                                  <input type="submit" value="Company" class="submitt"  id="company" />
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                <input type="submit" value="Alerts" class="submitt" />
+                                                                                </div>
+                                                                           </div>
+                                                            
+                                                            
+                                                            </div>
+                                                            <div class="col-md-2" >
+                                                            
+                                                            </div>
+                    </div>
+					
+					
+					<div class="row">
+					
+					<div class="col-md-4"></div>
+					<div class="col-md-4" style="margin-top:30px;" id="responsecontainer" align="center"></div>
+					<div class="col-md-4"></div>
+					
+					</div>
+					
+				<!--	<div class="row">
+					
+					<div class="col-md-4"></div>
+					<div class="col-md-4" style="margin-top:30px;" id="responsecompany" align="center"></div>
+					<div class="col-md-4"></div>
+					
+					</div>-->
+					
+					
+					
+  </div>
+
+
+
+
+
+<!--login end here-->
+</body>
+</html>

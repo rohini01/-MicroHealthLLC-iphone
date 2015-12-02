@@ -1,0 +1,296 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/customer.js"></script>
+
+
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+
+<script language="javascript">
+function redirect() {
+    window.location="slide4.html";
+}
+function myFunction() {
+    window.location="slide1.html";
+}
+function start(){
+
+setTimeout(myFunction, 120000);  
+do_tts();
+
+}
+
+
+</script>
+</head>
+<body  onload="start()" >
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+<!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            <h1><img src="images/logo.png" width="100%" height="140" /></h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="container-fluid">
+<!------ face detection --->
+                    <div class="row">
+                                                            <div class="col-md-5">
+                                                            
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                            <h1><img src="images/img_scanner.png"  class="scanner_img"/>
+</h1>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                            
+                                                            </div>
+                    </div>
+                    </div>
+                    
+                    
+   <!------ form --->
+                    <div class="container-fluid">
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            <div class="col-md-4 signout_frm">
+                                                          <form>
+		<input type="text" class="text" id="name" value="Your Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}"/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text" id="phone" value="Phone " onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Phone';}"/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text" value="Email" id="email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}"/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text" value="Company" id="company"  onfocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Company';}"/>
+         <hr class="sign_line" noshade>
+        <input type="text" class="text" value="Visit Reason"  id="vreason" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Visit Reason';}"/>
+        
+        <hr class="sign_line" noshade>
+        <select class="per_visit" name="per_visit"  id="vperson">
+        <option value="Person Visiting" selected> Person Visiting</option>
+        <option value="John Daniel" >John Daniel </option>
+        <option  value="Darren Handyside">Darren Handyside </option>
+        <option value="Sirak">Sirak </option>
+        </select>
+        <hr class="sign_line" noshade>
+         
+        <select class="citizen" name="us_citizen" id="citizen">
+        <option value="Person Visiting" selected> Us Citizen</option>
+        <option value="Yes" >Yes</option>
+        <option  value="No">No </option>
+        </select>
+       
+        
+        <select class="classi" name="classified" id="classified">
+        <option value="Person Visiting" selected> Classified</option>
+        <option value="Yes" >Yes </option>
+        <option  value="No">No </option>
+        </select>
+        
+		   
+       </form>
+                                 
+
+                 
+                                  </div>
+                 
+                                                     <div class="col-md-4">
+                                                     </div> 
+                                                      
+                  
+           </div>
+           
+           
+           <!--- lines -->
+           
+      <div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            
+                                                             <div class="col-md-4">
+                                                        <hr class="sm_line1" noshade color="#000000">
+                                                         <hr class="sm_line2" noshade color="#000000">
+                                                            </div>
+                                                             <div class="col-md-4">
+                                                        
+                                                            </div>      
+           
+           
+           
+           </div>       
+           
+           
+              <!--- half form -->
+           <div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            
+                                                             <div class="col-md-4 signout_frm_half">
+                                                             <form>
+                                                       <select class="time_in" name="time_in" id="timein">
+        <option value="Person Visiting" selected>Time In</option>
+      <option value="0">12:00 am</option>
+	  <option value="1">1:00 am</option>
+	  <option value="2">2:00 am</option>
+	  <option value="3">3:00 am</option>
+	  <option value="4">4:00 am</option>
+	  <option value="5">5:00 am</option>
+	  <option value="6">6:00 am</option>
+	  <option value="7">7:00 am</option>
+	  <option value="8">8:00 am</option>
+	  <option value="9">9:00 am</option>
+	  <option value="10">10:00 am</option>
+	  <option value="11">11:00 am</option>
+	  <option value="12">12:00 pm</option>
+	  <option value="13">1:00 pm</option>
+	  <option value="14">2:00 pm</option>
+	  <option value="15">3:00 pm</option>
+	  <option value="16">4:00 pm</option>
+	  <option value="17">5:00 pm</option>
+	  <option value="18">6:00 pm</option>
+	  <option value="19">7:00 pm</option>
+	  <option value="20">8:00 pm</option>
+	  <option value="21">9:00 pm</option>
+	  <option value="22">10:00 pm</option>
+	  <option value="23">11:00 pm</option>
+
+        </select>
+       
+        
+         <select class="time_out" name="time_out" id="timeout">
+        <option value="Person Visiting" selected> Time Out</option>
+      
+		  <option value="0">12:00 am</option>
+		  <option value="1">1:00 am</option>
+		  <option value="2">2:00 am</option>
+		  <option value="3">3:00 am</option>
+		  <option value="4">4:00 am</option>
+		  <option value="5">5:00 am</option>
+		  <option value="6">6:00 am</option>
+		  <option value="7">7:00 am</option>
+		  <option value="8">8:00 am</option>
+		  <option value="9">9:00 am</option>
+		  <option value="10">10:00 am</option>
+		  <option value="11">11:00 am</option>
+		  <option value="12">12:00 pm</option>
+		  <option value="13">1:00 pm</option>
+		  <option value="14">2:00 pm</option>
+		  <option value="15">3:00 pm</option>
+		  <option value="16">4:00 pm</option>
+		  <option value="17">5:00 pm</option>
+		  <option value="18">6:00 pm</option>
+		  <option value="19">7:00 pm</option>
+		  <option value="20">8:00 pm</option>
+		  <option value="21">9:00 pm</option>
+		  <option value="22">10:00 pm</option>
+		  <option value="23">11:00 pm</option>
+
+        </select></form>   
+          </div>
+        <div class="col-md-4">
+        </div>      
+           </div>       
+
+   <!--- lines -->
+
+<div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            
+                                                             <div class="col-md-4">
+                                                        <hr class="sm_line1" noshade color="#000000">
+                                                         <hr class="sm_line2" noshade color="#000000">
+                                                            </div>
+                                                             <div class="col-md-4">
+                                                        
+                                                            </div>      
+           
+           
+           
+           </div>       
+
+
+<div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            
+                                                             <div class="col-md-4 signout_frm_half1">
+                                                             <form>
+                                                         <input type="button" value="Sign Out" id="customer" class="submitt"  onClick="redirect();"/> 
+       <input type="button" value="Cancel" class="submitt" onClick="myFunction();" />
+       
+       
+       
+                                                        
+                                                        </form>
+                                                       
+                                                            </div>
+                                                       <div class="col-md-4">
+                                                       
+                                                            </div>      
+           
+           
+           
+           </div>    
+
+
+
+
+
+</div>
+
+
+
+
+        
+
+
+    
+
+
+
+<!--login end here-->
+</body>
+</html>

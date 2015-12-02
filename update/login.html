@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login Form</title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+
+</head>
+<body onLoad="do_tts()">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+<!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                            </h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            <h1><img src="images/logo.png" width="100%" height="180" /></h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                    </div>
+                    </div>
+                    <!------ form --->
+                    <div class="container-fluid">
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            <div class="col-md-4 login_frm" onClick="loginUser('loginUser')">
+                                                           
+                                                          <form>
+		<input type="text" name="email" class="user active" id="email" value="Your Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"/>
+         <hr class="cret_line" noshade>
+		<input type="password"  name="password" value="Password" class="lock active" id="password"  onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"/>
+         <hr class="cret_line" noshade>
+ <input type="button" name="login" value="Login" class="submitt"  id="login"/>
+ 
+ 
+
+</form>
+	
+                                  </div>
+                 
+                 <div class="col-md-4">
+                 </div> 
+                  
+                  
+           </div>
+           </div>       
+
+<div class="container-fluid">  
+                    <div class="row">
+                                                    <div class="col-md-5">
+                                                    </div>
+                                                <div class="col-md-2" align="center">
+                                                                <a href="forgot_pwd.html"> Forgot Password? </a>                                    
+                                                    </div>
+                                                <div class="col-md-5">
+                                                  </div>
+
+
+</div>
+
+
+
+
+
+<!-- others links heading -->     
+                  
+                    <div class="row">
+                                                    <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-6 div_headline" align="justify">
+                                                     <p class="alignment">
+                                                     
+                                                           <hr class="hr_lef1"> 
+                                                           <h5 class="text_orsignwith"> Or Sign in With</h5>  
+                                                           <hr class="hr_rig">
+                                                     </p>
+                                                            
+                                                      
+                                                                               
+                                </div>
+ 
+                                                  
+                                                    <div class="col-md-2">
+                                                    </div>
+                    
+                              </div>
+                    
+
+
+<!-- others links  Show--> 
+ 
+                    <div class="row">
+                                                   
+                                                <div class="col-md-12">
+                                                            <p class="social_set">
+                                                           
+                               <a href="#"> <img src="images/facebook.png" class="img_fb" />  </a>
+                               <a href="#"> <img src="images/google.png" class="img_google" />  </a>
+                               <a href="#"> <img src="images/twitter.png" class="img_twit"/>  </a>
+                                </p>                                                                   
+                                                    </div>
+                                                
+
+</div>
+
+
+<!-- others links heading --> 
+
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                        
+                                                            </div>
+                                                            <div class="col-md-4 login_frm1">
+                                                           
+                                                          
+	<a href="create_account.html"> 
+    <form>	
+<input type="button" value="Register Now" class="submitt" /></a>
+</form>
+<br/>
+
+	
+                                  </div>
+                 
+                 <div class="col-md-4">
+                 </div> 
+                  
+                  
+           </div>
+        </div>       
+
+
+
+
+
+
+
+<!--login end here-->
+</body>
+</html>

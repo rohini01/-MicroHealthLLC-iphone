@@ -1,0 +1,135 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script language="javascript">
+function redirect() {
+    window.location="slide1.html";
+}
+
+function myFunction() {
+    window.location="slide3.html";
+}
+function start(){
+do_tts();
+setTimeout(myFunction, 20000); 
+}
+</script>
+
+</head>
+<body onLoad="start()">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+<!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            <h1><img src="images/logo.png" width="100%" height="180" /></h1>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                            
+                                                            </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <!--logo start here-->
+<div class="container-fluid">
+<!------ Logo --->
+                    <div class="row">
+                                       <div class="col-md-4 sign_screen_divleft">
+                                       
+                                                            <img src="images/lady_img.png" class="lady_img"/>
+                                                            </div>
+                                                            
+                       
+<div class="col-md-4 sign_screen_divright">
+<!-- comment image-->
+                           <div class="text_bg_signin">
+                          
+                                        <div id="speech_en">
+                                      OK. Please enter your information on the following screen.  You will be automatically sent in 3 seconds.
+
+                                      
+                                        
+                                        </div>
+
+
+</div>            
+<!-- comments data end -->
+<!--submit buttons-->
+<div class="subm_bg_signin row">
+<div class="col-md-12">    
+<div class="btn_signinwelcum">
+                                 <form>
+                
+                <input type="button" value="Sign In" class="submitt"  onclick="myFunction();"/>
+       <input type="button" value="Cancel" class="submitt" onclick="redirect();"/>
+       </form>
+       
+                                 </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+  <!-- submit btn end-->                                                   
+                                                            
+                                                            
+ </div>
+                                                            
+                                                            
+                               <div class="col-md-4">
+                               
+                               </div>                             
+                        
+                        
+                        
+                        
+                        
+                        
+                                                            
+                    </div>
+                    </div>
+                    
+                    
+                    
+
+	
+
+
+
+<!--login end here-->
+</body>
+</html>
