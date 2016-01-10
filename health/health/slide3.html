@@ -1,0 +1,458 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/customer.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+
+  <script type="text/javascript" src="lib/bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker.css" />
+
+  <script type="text/javascript" src="lib/site.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/site.css" />
+
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script language="javascript">
+function redirect() {
+    window.location="slide1.html";
+}
+
+function myFunction() {
+    window.location="slide4.html";
+}
+function start(){
+setTimeout(redirect, 120000); 
+}
+</script>
+
+<script type="text/javascript">
+      $(document).ready(function() {
+    $('#timein').change(function(){
+        var st = $('#timein').val(); // start time Format: '9:00 PM'
+        var et = $('#timeout').val(); // end time   Format: '11:00 AM' 
+
+        //how do i compare time
+            if(st > et)
+            {
+               alert('end time always greater then start time');
+            }
+			
+    });
+});
+
+function exit(){
+	window.location="login.html";	
+}
+</script>
+
+
+</head>
+<body onLoad="start()">
+
+<!--logo start here-->
+<div class="bg">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+
+
+<!------ Logo --->
+<div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12" >
+                      <form>
+                        	<input type="button" value="EXIT" class="submitt pull-right" onClick="exit();"/>
+                       </form>
+                      <img src="images/logo.png" id="logo" alt="logo" class="img-responsive"/>
+                      </div>                                      
+                                                            
+</div>
+
+<div class="container-fluid">
+<!------ face detection --->
+                    <div class="row">
+                                                            
+                                                            <div class="col-md-12">
+                                                            <h1><img src="images/img_scanner.png" class="scanner_img"/>
+</h1>
+                                                            </div>
+                                                            
+                    </div>
+                    </div>
+                    
+                    
+   <!------ form --->
+                    <div class="container-fluid">
+                    <div class="row">
+                                                            
+                                                            <div class="col-md-12 text-center">
+                                                          <form class="signout_frm">
+		<input type="text" class="text pholder"  placeholder="Your Name"id="name" value=""/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text pholder"  placeholder="Phone"id="phone" value=""/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text pholder"  placeholder="Email"id="email" value=""/>
+        <hr class="sign_line" noshade>
+        <input type="text" class="text pholder"  placeholder="Company"id="company" value=""/>
+         <hr class="sign_line" noshade>
+        <input type="text" class="text pholder"  placeholder="Reason"id="vreason" value=""/>
+        <hr class="sign_line" noshade>
+        <select class="per_visit" name="per_visit"  id="vperson">
+        <option value="Person Visiting" selected> Person Visiting</option>
+        <option value="per_opt" >Daniel </option>
+        <option  value="per_opt">Ross</option>
+        <option value="per_opt">Chandler</option>
+        </select>
+        <hr class="sign_line" noshade>
+         
+        <select class="citizen pull-left" name="us_citizen" id="citizen">
+        <option value="Person Visiting" selected> Us Citizen</option>
+        <option value="" >Yes </option>
+        <option  value="">No </option>
+        
+        </select>
+       
+        
+        <select class="classi pull-right" name="classified" id="classified">
+        <option value="Person Visiting" selected> Classified</option>
+        <option value="" >Yes</option>
+        <option  value="">No </option>
+        
+        </select>
+        
+		   
+       </form>
+               
+                 
+                                  </div>
+                 
+                                                      
+                  
+           </div>
+           
+           
+           <!--- lines -->
+           
+      <div class="row">
+                                                            
+                                                            
+                                                             <div class="col-md-12 text-center">
+                                                              <div class="line_center">
+                                                        <hr class="sm_line1 pull-left" noshade color="#000000">
+                                                         <hr class="sm_line2 pull-right" noshade color="#000000">
+                                                            </div>                 
+
+                                                                 </div>
+           
+           
+           
+           </div>       
+           
+           
+              <!--- half form -->
+           <div class="row">
+                                                            
+                                                            
+                                        <div class="col-md-12 text-center">
+    
+
+                                                       <form class="signout_frm_half">
+													   
+                                            
+                                                           <select class="time_in pull-left" name="time_in" id="timein">
+        <option value="Person Visiting" selected>Time In</option>
+        
+      <option value="0">12:00 am</option>
+        <option value="0">12:15 am</option>
+        <option value="0">12:30 am</option>
+        <option value="0">12:45 am</option>
+	  <option value="1">1:00 am</option>
+      <option value="0">1:15 am</option>
+      <option value="0">1:30 am</option>
+      <option value="0">1:45 am</option>
+	  <option value="2">2:00 am</option>
+      <option value="2">2:15 am</option>
+      <option value="2">2:30 am</option>
+      <option value="2">2:45 am</option>
+	  <option value="3">3:00 am</option>
+      <option value="3">3:15 am</option>
+      <option value="3">3:30 am</option>
+      <option value="3">3:45 am</option>
+	  <option value="4">4:00 am</option>
+      <option value="4">4:15 am</option>
+      <option value="4">4:30 am</option>
+      <option value="4">4:45 am</option>
+	  <option value="5">5:00 am</option>
+      <option value="5">5:15 am</option>
+      <option value="5">5:30 am</option>
+      <option value="5">5:45 am</option>
+	  <option value="6">6:00 am</option>
+      <option value="6">6:15 am</option>
+      <option value="6">6:30 am</option>
+      <option value="6">6:45 am</option>
+	  <option value="7">7:00 am</option>
+      <option value="7">7:15 am</option>
+      <option value="7">7:30 am</option>
+      <option value="7">7:45 am</option>
+	  <option value="8">8:00 am</option>
+      <option value="8">8:15 am</option>
+      <option value="8">8:30 am</option>
+      <option value="8">8:45 am</option>
+	  <option value="9">9:00 am</option>
+      <option value="9">9:15 am</option>
+      <option value="9">9:30 am</option>
+      <option value="9">9:45 am</option>
+	  <option value="10">10:00 am</option>
+      <option value="10">10:15 am</option>
+      <option value="10">10:30 am</option>
+      <option value="10">10:45 am</option>
+	  <option value="11">11:00 am</option>
+      <option value="11">11:15 am</option>
+      <option value="11">11:30 am</option>
+      <option value="11">11:45 am</option>
+	  <option value="12">12:00 pm</option>
+      <option value="12">12:15 pm</option>
+      <option value="12">12:30 pm</option>
+      <option value="12">12:45 pm</option>
+	  <option value="13">1:00 pm</option>
+      <option value="13">1:15 pm</option>
+      <option value="13">1:30 pm</option>
+      <option value="13">1:45 pm</option>
+	  <option value="14">2:00 pm</option>
+      <option value="14">2:15 pm</option>
+      <option value="14">2:30 pm</option>
+      <option value="14">2:45 pm</option>
+	  <option value="15">3:00 pm</option>
+      <option value="15">3:15 pm</option>
+      <option value="15">3:30 pm</option>
+      <option value="15">3:45 pm</option>
+	  <option value="16">4:00 pm</option>
+       <option value="16">4:15 pm</option>
+        <option value="16">4:30 pm</option>
+         <option value="16">4:45 pm</option>
+	  <option value="17">5:00 pm</option>
+      <option value="17">5:15 pm</option>
+      <option value="17">5:30 pm</option>
+      <option value="17">5:45 pm</option>
+	  <option value="18">6:00 pm</option>
+      <option value="18">6:15 pm</option>
+      <option value="18">6:30 pm</option>
+      <option value="18">6:45 pm</option>
+	  <option value="19">7:00 pm</option>
+       <option value="19">7:15 pm</option>
+        <option value="19">7:30 pm</option>
+         <option value="19">7:45 pm</option>
+	  <option value="20">8:00 pm</option>
+      <option value="20">8:15 pm</option>
+      <option value="20">8:30 pm</option>
+      <option value="20">8:45 pm</option>
+	  <option value="21">9:00 pm</option>
+      <option value="21">9:15 pm</option>
+      <option value="21">9:30 pm</option>
+      <option value="21">9:45 pm</option>
+	  <option value="22">10:00 pm</option>
+      <option value="22">10:15 pm</option>
+      <option value="22">10:30 pm</option>
+      <option value="22">10:45 pm</option>
+	  <option value="23">11:00 pm</option>
+      <option value="23">11:15 pm</option>
+      <option value="23">11:30 pm</option>
+      <option value="23">11:45 pm</option>
+        </select>
+       
+        
+         <select class="time_out pull-right" name="time_out" id="timeout">
+        <option value="Person Visiting" selected> Time Out</option>
+        <option value="0">12:00 am</option>
+        <option value="0">12:15 am</option>
+        <option value="0">12:30 am</option>
+        <option value="0">12:45 am</option>
+	  <option value="1">1:00 am</option>
+      <option value="0">1:15 am</option>
+      <option value="0">1:30 am</option>
+      <option value="0">1:45 am</option>
+	  <option value="2">2:00 am</option>
+      <option value="2">2:15 am</option>
+      <option value="2">2:30 am</option>
+      <option value="2">2:45 am</option>
+	  <option value="3">3:00 am</option>
+      <option value="3">3:15 am</option>
+      <option value="3">3:30 am</option>
+      <option value="3">3:45 am</option>
+	  <option value="4">4:00 am</option>
+      <option value="4">4:15 am</option>
+      <option value="4">4:30 am</option>
+      <option value="4">4:45 am</option>
+	  <option value="5">5:00 am</option>
+      <option value="5">5:15 am</option>
+      <option value="5">5:30 am</option>
+      <option value="5">5:45 am</option>
+	  <option value="6">6:00 am</option>
+      <option value="6">6:15 am</option>
+      <option value="6">6:30 am</option>
+      <option value="6">6:45 am</option>
+	  <option value="7">7:00 am</option>
+      <option value="7">7:15 am</option>
+      <option value="7">7:30 am</option>
+      <option value="7">7:45 am</option>
+	  <option value="8">8:00 am</option>
+      <option value="8">8:15 am</option>
+      <option value="8">8:30 am</option>
+      <option value="8">8:45 am</option>
+	  <option value="9">9:00 am</option>
+      <option value="9">9:15 am</option>
+      <option value="9">9:30 am</option>
+      <option value="9">9:45 am</option>
+	  <option value="10">10:00 am</option>
+      <option value="10">10:15 am</option>
+      <option value="10">10:30 am</option>
+      <option value="10">10:45 am</option>
+	  <option value="11">11:00 am</option>
+      <option value="11">11:15 am</option>
+      <option value="11">11:30 am</option>
+      <option value="11">11:45 am</option>
+	  <option value="12">12:00 pm</option>
+      <option value="12">12:15 pm</option>
+      <option value="12">12:30 pm</option>
+      <option value="12">12:45 pm</option>
+	  <option value="13">1:00 pm</option>
+      <option value="13">1:15 pm</option>
+      <option value="13">1:30 pm</option>
+      <option value="13">1:45 pm</option>
+	  <option value="14">2:00 pm</option>
+      <option value="14">2:15 pm</option>
+      <option value="14">2:30 pm</option>
+      <option value="14">2:45 pm</option>
+	  <option value="15">3:00 pm</option>
+      <option value="15">3:15 pm</option>
+      <option value="15">3:30 pm</option>
+      <option value="15">3:45 pm</option>
+	  <option value="16">4:00 pm</option>
+       <option value="16">4:15 pm</option>
+        <option value="16">4:30 pm</option>
+         <option value="16">4:45 pm</option>
+	  <option value="17">5:00 pm</option>
+      <option value="17">5:15 pm</option>
+      <option value="17">5:30 pm</option>
+      <option value="17">5:45 pm</option>
+	  <option value="18">6:00 pm</option>
+      <option value="18">6:15 pm</option>
+      <option value="18">6:30 pm</option>
+      <option value="18">6:45 pm</option>
+	  <option value="19">7:00 pm</option>
+       <option value="19">7:15 pm</option>
+        <option value="19">7:30 pm</option>
+         <option value="19">7:45 pm</option>
+	  <option value="20">8:00 pm</option>
+      <option value="20">8:15 pm</option>
+      <option value="20">8:30 pm</option>
+      <option value="20">8:45 pm</option>
+	  <option value="21">9:00 pm</option>
+      <option value="21">9:15 pm</option>
+      <option value="21">9:30 pm</option>
+      <option value="21">9:45 pm</option>
+	  <option value="22">10:00 pm</option>
+      <option value="22">10:15 pm</option>
+      <option value="22">10:30 pm</option>
+      <option value="22">10:45 pm</option>
+	  <option value="23">11:00 pm</option>
+      <option value="23">11:15 pm</option>
+      <option value="23">11:30 pm</option>
+      <option value="23">11:45 pm</option>
+        </select>
+          
+      
+                                                      </form>   
+      
+      
+
+                      
+                                                            </div>
+                                                             
+           
+           
+           
+           </div>       
+
+   <!--- lines -->
+<div class="row">
+                                                            
+                                                            
+                                                             <div class="col-md-12 text-center">
+                                                              <div class="line_center">
+                                                        <hr class="sm_line1 pull-left" noshade color="#000000">
+                                                         <hr class="sm_line2 pull-right" noshade color="#000000">
+                                                            </div>                 
+
+                                                                 </div>
+           
+           
+           
+           </div>           
+           
+
+<div class="row">
+                                                           
+                                                             <div class="col-md-12 text-center">
+                                  <form class="signout_frm_half1">
+                <input type="button" value="Sign Out" id="customer" class="submitt" onclick="myFunction();" /> 
+       <input type="button" value="Cancel" class="submitt" onclick="redirect();"/>
+       
+                                                        </form>
+                                                       
+                                                            </div>
+                                                           
+           
+           
+           
+           </div>    
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!--login end here-->
+</body>
+</html>

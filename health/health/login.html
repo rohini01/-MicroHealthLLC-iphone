@@ -1,0 +1,383 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login Form</title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="google-signin-client_id" content="
+client id - 411617169959-b6jllh2uksql0nilr79mn1iof7fqepmq.apps.googleusercontent.com">
+<!--Google Fonts-->
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://plus.google.com/js/client:plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+  </script>
+
+</head>
+<body onLoad="do_tts()" class="bg">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden"></div>
+<!--logo start here-->
+
+<div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12" >
+                      <img src="images/logo.png" id="logo" alt="logo" class="img-responsive"/>
+                      </div>                                      
+                                                            
+</div>
+
+
+                    <!------ form --->
+                   
+                    <div class="row">
+                                                            
+                                                            <div class="col-md-12 text-center" onClick="loginUser('loginUser')">
+                                                           
+                                        <form class="login_frm">
+	<input type="text" name="email" class="user active pholder" placeholder="Your Email" id="email" value=""/>
+         <hr class="cret_line" noshade>
+		<input type="password"  name="password" value="" class="lock active pholder"  placeholder="*********" id="password"  onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"/>
+         <hr class="cret_line" noshade>
+         <input type="button" name="login" value="Login" class="submitt set_btn"  id="login"/>
+ 
+ 
+ 
+
+</form>
+	
+	
+                                  </div>
+                 
+                
+                  
+                  
+           </div>
+           
+           
+                  <div class="row">
+                                                    
+                                                    <div class="col-md-12 text-center">
+                                                    <a href="forgot_pwd.html"> Forgot Password? </a>
+                                                    </div>
+
+
+</div>
+
+
+
+
+
+<!-- others links heading -->     
+                  
+                   <div class="row">
+                                                    
+                                     <div class="col-md-12 text-center">
+                                                    
+                                     <img src="images/signinwith.png" id="signwith" class="img-responsive"/> 
+                                                                               
+                                </div>
+ 
+                                                  
+                                                    
+                              </div>
+                    
+
+
+<!-- others links  Show--> 
+ 
+                    <div class="col-md-12 text-center">
+        <nav class="links" id="fblogin" id="google_login_box">
+          <li><img src="images/facebook.png" width="60" height="60" alt="icon-1" onclick="FBLogin();"></li>
+          <li><a href="#"><img src="images/twitter.png" width="60" height="60" alt="icon-2"></a></li>
+          <li ><img src="images/google.png" width="60" height="60" alt="icon-3" onclick="login()" ></li>
+          
+         
+          
+          
+        </nav></div>
+
+
+<!-- others links heading --> 
+
+                    <div class="row">
+                                                            
+                                                            <div class="col-md-12  text-center">
+                                                           
+                                                          
+	<a href="create_account.html"> 
+    <form class="login_frm">	
+<input type="button" value="Register Now" class="submitt" /></a>
+</form>
+<br/>
+
+	
+                                  </div>
+                 
+                
+                  
+                  
+           </div>
+             
+
+
+
+
+
+
+</div>
+<!--login end here-->
+
+<script>
+// This is called with the results from from FB.getLoginStatus().
+function statusChangeCallback(response) {
+
+  if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      // we need to hide FB login button
+     
+      //fetch data from facebook
+      getUserInfo();
+	  
+  } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      $('#status').html('Please log into this app.');
+  } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      $('#status').html('Please log into facebook');
+  }
+}
+
+// This function is called when someone finishes with the Login
+// Button.  See the onlogin handler attached to it in the sample
+// code below.
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '486511858223800',
+      cookie     : true,  // enable cookies to allow the server to access 
+                          // the session
+      xfbml      : true,  // parse social plugins on this page
+      version    : 'v2.3' // use version 2.3
+    });
+
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+
+  };
+
+    // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+
+function getUserInfo() {
+    FB.api('/me', {fields: 'id,name,email'}, function(response) {
+      $.ajax({
+            type: "POST",
+            dataType: 'json',
+            data: response,
+            url: 'check_user.php',
+            success: function(msg) {
+             if(msg.error== 1)
+             {
+              alert('Something Went Wrong!');
+             } else {
+              $('#fbstatus').show();
+              $('#fblogin').hide();
+              $('#fbname').text("Name : "+msg.name);
+              $('#fbemail').text("Email : "+msg.email);
+              $('#fbfname').text("First Name : "+msg.first_name);
+              $('#fblname').text("Last Name : "+msg.last_name);
+              $('#fbid').text("Facebook ID : "+msg.id);
+              $('#fbimg').html("<img src='http://graph.facebook.com/"+msg.id+"/picture'>");
+             }
+            }
+      });
+
+    });
+}
+
+  function FBLogout()
+  {
+  	FB.logout(function(response) {
+         $('#fblogin').show();
+          $('#fbstatus').hide();
+
+    });
+  }
+
+function FBLogin()
+{
+
+      FB.login(function(response) {
+         if (response.authResponse) 
+         {
+             getUserInfo(); //Get User Information.
+
+          } else
+          {
+           alert('Authorization failed.');
+          }
+       },{scope: 'public_profile,email'});
+
+}
+
+jQuery(function(){
+jQuery('.s_download').live("click", function(e) {
+      var semail = jQuery("#itzurkarthi_email").val();
+      if(semail == '')
+      {
+        alert('Enter Email');
+        return false;
+      }
+      var str = "sub_email="+semail
+      jQuery.ajax({
+        type: "POST",
+        url: "download.php",
+        data: str,
+        cache: false,
+        success: function(htmld){
+            jQuery('#down_update').html(htmld);
+        }
+      });
+    }); 
+});  
+</script>
+
+<script type="text/javascript">
+ 
+function logout()
+{
+    gapi.auth.signOut();
+    location.reload();
+}
+function login() 
+{
+  var myParams = {
+    'clientid' : '425154131957-hcpqk83sam9v8j1027vdhpkhdc176vp3.apps.googleusercontent.com',
+    'cookiepolicy' : 'single_host_origin',
+    'callback' : 'loginCallback',
+    'approvalprompt':'force',
+    'scope' : 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read'
+  };
+  gapi.auth.signIn(myParams);
+}
+ 
+function loginCallback(result)
+{
+    if(result['status']['signed_in'])
+    {
+        var request = gapi.client.plus.people.get(
+        {
+            'userId': 'me'
+        });
+        request.execute(function (resp)
+        {
+            var email = '';
+            if(resp['emails'])
+            {
+                for(i = 0; i < resp['emails'].length; i++)
+                {
+                    if(resp['emails'][i]['type'] == 'account')
+                    {
+                        email = resp['emails'][i]['value'];
+                    }
+                }
+            }
+ 
+            var str = "Name:" + resp['displayName'] + "<br>";
+            str += "Image:" + resp['image']['url'] + "<br>";
+            str += "<img src='" + resp['image']['url'] + "' /><br>";
+ 
+            str += "URL:" + resp['url'] + "<br>";
+            str += "Email:" + email + "<br>";
+            document.getElementById("profile").innerHTML = str;
+        });
+ 
+    }
+ 
+}
+function onLoadCallback()
+{
+    gapi.client.setApiKey('AIzaSyCsDcf25HWR_564PKCswCavaga9PtVb9KE');
+    gapi.client.load('plus', 'v1',function(){});
+}
+ 
+    </script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5208e2cf54cfbd32" async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27820211-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+</script>
+
+</body>
+</html>

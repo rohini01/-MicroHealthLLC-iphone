@@ -1,0 +1,186 @@
+[30-Nov-2015 13:15:54 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:15:58 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:15:58 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:32 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:33 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:33 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[30-Nov-2015 13:16:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/siliconw/public_html/finalmicro/login.php on line 18
+[18-Dec-2015 06:47:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 06:47:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 07:15:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 07:31:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 07:36:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 07:38:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 07:46:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 08:58:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 10:07:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 10:07:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 10:07:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 10:35:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[18-Dec-2015 10:35:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[23-Dec-2015 15:37:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[23-Dec-2015 15:38:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[23-Dec-2015 15:38:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[23-Dec-2015 15:38:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 08:55:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 08:56:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 08:56:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 09:09:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 09:32:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 09:32:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 09:32:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4
+[28-Dec-2015 09:57:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/siliconw/public_html/health/db.php:4
+Stack trace:
+#0 /home/siliconw/public_html/health/db.php(4): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/siliconw/public_html/health/db.php(33): dbconn->__construct('mysql:host=loca...', 'root', '')
+#2 /home/siliconw/public_html/health/check_user.php(4): include_once('/home/siliconw/...')
+#3 {main}
+  thrown in /home/siliconw/public_html/health/db.php on line 4

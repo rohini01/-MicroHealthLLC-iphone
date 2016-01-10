@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script type="text/javascript">
+function moveback() {
+ window.location="slide12.html";
+}
+
+function exit(){
+	window.location="login.html";	
+}
+</script>
+
+</head>
+<body onLoad="do_tts()">
+
+
+<!--logo start here-->
+<div class="bg">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+
+
+<!------ Logo --->
+<div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12" >
+                      <form>
+                        	<input type="button" value="EXIT" class="submitt pull-right" onClick="exit();"/>
+                       </form>
+                      <img src="images/logo.png" id="logo" alt="logo" class="img-responsive"/>
+                      </div>                                      
+                                                            
+</div>
+
+
+<div class="row">
+                  <div class="col-md-5">
+                  
+                  <img src="images/lady_img1.png" id="lady_set" alt="girl-call" class="img-responsive"/>
+                  
+                  </div>
+                  
+              <div class="col-md-7">
+              
+              <div class="Heading_set_report" style="font-size:24px;">
+                          
+                                   <div class="arrow_box" id="speech_en">
+                                      Please login to view reports and set me up.
+                                        </div>
+                                        
+                                        <div class="text-center"> 
+                                        <form class="report_logform"> 
+                                      
+	<input type="text" name="email" class="user active pholder" placeholder="Your Email" id="email" value=""/>
+         <hr class="cret_line" noshade>
+		<input type="password"  name="password" value="" class="lock active pholder"  placeholder="*******" id="password"  onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"/>
+         <hr class="cret_line" noshade>
+         <input type="button" name="login" value="Login" class="submitt set_btn pull-right" onClick="moveback()" id="login"/>
+      </form>
+                                        </div>
+                                        
+                                        
+                                        
+                                  <div class="text-center">
+                            <p class="dont_account pull-right">Don't have an account ?
+                           <span class="reg_tagline_font_reg"><a href="create_account.html">Register here</a></span></p>
+     
+                          </div>
+                          
+                           
+             </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+                    
+                    
+                    
+                  
+                                                            
+                
+                   
+                    
+                    
+                    
+
+	
+
+
+
+<!--login end here-->
+</body>
+</html>

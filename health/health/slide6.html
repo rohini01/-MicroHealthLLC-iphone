@@ -1,0 +1,118 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<!-- Custom Theme files -->
+
+<link href="css/stylee.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="js/bootstrap.js" type="text/javascript" media="all"/>
+<link href="js/bootstrap.min.js" type="text/javascript" media="all"/>
+<link href="js/jquery.min.js" type="text/javascript" media="all"/>
+<link href="js/modernizr.custom.28468.js" type="text/javascript" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+<script type="text/javascript" src="speakGenerator.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+<script language="javascript">
+function redirect() {
+    window.location="slide4.html";
+}
+function moveback() {
+  window.location="slide1.html";
+}
+
+function start(){
+do_tts();
+setTimeout(redirect, 13000); 
+}
+
+function exit(){
+	window.location="login.html";	
+}
+</script>
+</head>
+<body onLoad="do_tts()">
+
+<!--logo start here-->
+<div class="bg">
+<div style="font-size:25px">
+<input type="checkbox" name="save"  style="display:none" /><br/>
+</div>
+<div id="player" style="visibility:hidden" ></div>
+
+
+<!------ Logo --->
+<div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12" >
+                      <form>
+                        	<input type="button" value="EXIT" class="submitt pull-right" onClick="exit();"/>
+                       </form>
+                      <img src="images/logo.png" id="logo" alt="logo" class="img-responsive"/>
+                      </div>                                      
+                                                            
+</div>
+
+
+<div class="row">
+                  <div class="col-md-5">
+                  
+                  <img src="images/lady_img1.png" id="lady_set" alt="girl-call" class="img-responsive"/>
+                  
+                  </div>
+                  
+              <div class="col-md-7">
+              <div class="arrow_box" style="font-size:23px;" id="speech_en"> 
+              I’ m sorry, we have not completed the sign in process. We need your signature to complete the process. 
+
+              </div>
+              <div class="un_btns">
+              
+                                         <form>
+                        
+                         <input type="button" value="Sign Out" class="submitt pull-left"  onclick="redirect();"/>
+       <input type="button" value="Cancel" class="submitt pull-right"   onclick="moveback();"/>
+
+
+                                        </form>
+       
+                                 
+              </div>
+              
+             
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+                    
+                    
+                    
+                  
+                                                            
+                
+                   
+                    
+                    
+                    
+
+	
+
+
+
+<!--login end here-->
+</body>
+</html>
